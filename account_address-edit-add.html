@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>Изменить адрес</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1>Изменить адрес</h1>
+            <form action="#">
+                <label for="firstname"><span class="required">* </span>Имя:</label>
+                <input class="form-input form-input_w360" type="text" id="firstname" name="firstname"
+                    required="required">
+                <label for="lastname"><span class="required">* </span>Фамилия:</label>
+                <input class="form-input form-input_w360" type="text" id="lastname" name="lastname" required="required">
+                <label for="address"><span class="required">* </span>Адрес:</label>
+                <textarea name="text" id="address" name="address" class="form-input form-input_w360 textarea"
+                    required="required"></textarea>
+                <label for="city"><span class="required">* </span>Город:</label>
+                <input class="form-input form-input_w360" type="text" id="city" name="city" required="required">
+                <label for="postcode"><span class="required">* </span>Почтовый индекс:</label>
+                <input class="form-input form-input_w360" type="text" id="postcode" name="postcode" required="required">
+                <label for="select-country"><span class="required">* </span>Страна:</label>
+                <select class="form-input form-input_w360" id="select-country" name="country">
+                    <option value="valcountry1">Страна</option>
+                </select>
+                <label for="select-region"><span class="required">* </span>Регион / Область:</label>
+                <select class="form-input form-input_w360" id="select-region" name="region">
+                    <option value="valregion1">Регион</option>
+                </select>
+                <label class="checkbox">
+                    <input type="radio" id="default" name="isdef" checked>
+                    <span></span>Основной адрес
+                </label>
+                <label class="checkbox">
+                    <input type="radio" id="notdefault" name="isdef">
+                    <span></span>Не основной адрес
+                </label>
+                <div class="form-bottom">
+                    <input type="submit" value="Сохранить">
+                    <span class="link_underlined"><a href="#">Назад</a></span>
+                </div>
+            </form>
+            <span>* Обязательные поля</span>
+        </div>
+    </main>
+    <script src="js/slider.js" type="text/javascript"></script>
+    <script src="js/favorite.js" type="text/javascript"></script>
+    <script src="js/mobile-menu.js" type="text/javascript"></script>
+    <script src="js/error-warning.js" type="text/javascript"></script>
+    <script src="js/product-quantity-changer.js" type="text/javascript"></script>
+</body>
+
+</html>
