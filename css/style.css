@@ -1597,11 +1597,16 @@ form .checkbox-list label {
 }
 
 .products-search ul li .product-price {
-	font-weight: 500;
+	font-size: 0;
+    font-weight: 500;
 	margin-top:5px;
+}
+.products-search ul li .product-price .price{
+    font-size: 14px;
 }
 .products-search ul li .product-price .old-price{
 	color: var(--grey-text);
+    font-size: 14px;
 	text-decoration: line-through;
 	margin-left: 5px;
 }
@@ -1753,6 +1758,40 @@ form .checkbox-list label {
 .sitemap-list li:not(:last-child) {
     margin-bottom: 10px;
 }
+
+/*---------*/
+.information-content p:not(:last-child) {
+    margin-bottom: 10px;
+}
+.information-content ul:not(:last-child) {
+    margin-bottom: 10px;
+}
+.information-content ol:not(:last-child) {
+    margin-bottom: 10px;
+}
+.information-content ul li:not(:last-child) {
+    margin-bottom: 5px;
+}
+.information-content ol li:not(:last-child) {
+    margin-bottom: 5px;
+}
+.information-content ul li{
+    list-style-type: disc;
+    list-style-position:inside;
+}
+.information-content ol {
+    list-style-type: decimal;
+    list-style-position:inside;
+}
+.information-content a {
+    text-decoration: underline;
+}
+.information-content img {
+    margin-bottom: 10px;
+    border: var(--border-grey);
+}
+
+
 
 
 @media (max-width: 1200px) {
