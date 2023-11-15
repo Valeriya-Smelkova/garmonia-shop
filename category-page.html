@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <title>Авторизация</title>
+    <title>Категория</title>
 </head>
 <body>
     <header>
@@ -121,18 +121,129 @@
     </header>
     <main>
         <div class="container">
-            <h1>Авторизация</h1>
-            <p class="text-description">Нет аккаунта? <span class="link_underlined"><a href="registration.html">Зарегистрироваться</a></span>.</p>
-            <form action="account.html">
-                <label for="email">E-mail:</label>
-                <input class="form-input form-input_w360" type="email" id="email" name="email" required="required">
-                <label for="password">Пароль:</label>
-                <input class="form-input form-input_w360" type="password" id="password" name="password" required="required">
-                <div class="form-bottom">
-                    <input type="submit" value="Войти">
-                    <span class="link_underlined"><a href="forgot-password.html">Забыли пароль?</a></span>
+            <h1>Категория - 100 товара(ов)</h1>
+            <div class="bread-crumbs">
+                <ul>
+                    <li><span class="link_underlined"><a href="index.html">Главная</a></span></li>
+                    <li><span>Категория</span></li>
+                </ul>
+            </div>
+            <div class="products-list-page-content">
+                <div class="split-container">
+                    <div class="left">
+                        <div class="filter">
+                            <form action="#">
+                                <div class="subtitle subtitle_mb25 filter-title">Фильтр</div>
+                                <fieldset>
+                                    <div class="parameter-header">
+                                        <legend class="subtitle subtitle_mb10">Цена</legend>
+                                    </div>
+                                    <div class="parameter-body">
+                                        <div class="price-parameter">
+                                            <div class="min-price-container">
+                                                <label for="min-price">Минимум</label>
+                                                <input class="form-input form-input_w78" type="text" id="min-price" name="min-price">
+                                            </div>
+                                            <span class="line"></span>
+                                            <div class="max-price-container">
+                                                <label for="max-price">Максимум</label>
+                                                <input class="form-input form-input_w78" type="text" id="max-price" name="max-price">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <div class="parameter-header">
+                                        <legend class="subtitle subtitle_mb10">Статус</legend>
+                                    </div>
+                                    <div class="parameter-body">
+                                        <div class="checkbox-list">
+                                            <label class="checkbox" for="discount">
+                                                <input type="checkbox" id="discount" name="status">
+                                                <span></span>Скидка
+                                            </label>
+                                            <label class="checkbox" for="new">
+                                                <input type="checkbox" id="new" name="status">
+                                                <span></span>Новинка
+                                            </label>
+                                            <label class="checkbox" for="hit">
+                                                <input type="checkbox" id="hit" name="status">
+                                                <span></span>Хит
+                                            </label>
+                                        </div>
+                                    </div>                               
+                                </fieldset>
+                                <div class="submit-parameters">
+                                    <input type="submit" id="button-filter" value="Поиск">
+                                    <span class="link_underlined"><a href="#">Сбросить фильтры</a></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="sort-products">
+                            <label for="select-sort">Сортировка:</label>
+                            <select class="form-input form-input_w360" id="select-sort" name="sort">
+                                <option value="valsort1">Сортировка</option>
+                            </select>
+                            <label for="select-category">Показать:</label>
+                            <select class="form-input form-input_w360" id="select-quantity" name="quantity-on-page">
+                                <option value="valqty1">12</option>
+                            </select>
+                        </div>
+                        <div class="pagination pagination_top">
+                            <div class="pagination-items">
+                                <ul>
+                                    <li>|<</li>
+                                    <li><</li>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>></li>
+                                    <li>>|</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="four-columns-265-grid">
+                            <div class="product-card card">
+                                <div class="image-and-statuse">
+                                    <ul>
+                                        <li>Скидка</li>
+                                        <li>Новинка</li>
+                                        <li>Хит</li>
+                                    </ul>
+                                    <div class="card-image">
+                                        <a href="product-page.html"><img src="Resources/images/product-images/гармонь чайка синий.jpeg" alt="Изображение товара"></a>
+                                    </div>
+                                </div>
+                                <div class="product-name-and-price">
+                                    <span class="product-name"><a href="product-page.html">НаименованиеНаименованиеНаименованиеНаименование</a></span>
+                                    <span class="old-price">50000 руб.</span>
+                                    <span class="price">10000 руб.</span>
+                                </div>
+                                <div class="cart-and-favorite">
+                                    <button class="button">В корзину</button>
+                                    <button class="like"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination pagination_bottom">
+                            <div class="pagination-items">
+                                <ul>
+                                    <li>|<</li>
+                                    <li><</li>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>></li>
+                                    <li>>|</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </form>
+                
+            </div>
         </div>
     </main>
     <footer>
