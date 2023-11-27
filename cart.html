@@ -125,38 +125,55 @@
             <div class="delete-list">
                 <span class="link_underlined"><a href="#">Очистить корзину</a></span>
             </div>
-            <div class="four-columns-265-grid">
-                <div class="product-card card">
-                    <div class="image-and-statuse">
-                        <ul>
-                            <li>Скидка</li>
-                            <li>Новинка</li>
-                            <li>Хит</li>
-                        </ul>
-                        <div class="card-image">
-                            <a href="product-page.html"><img src="Resources/images/product-images/гармонь чайка синий.jpeg" alt="Изображение товара"></a>
+            <div class="cart-products">
+                <div class="cart-product">
+                    <div class="product-info">
+                        <div class="image-and-statuse">
+                            <ul>
+                                <li>Скидка</li>
+                                <li>Новинка</li>
+                                <li>Хит</li>
+                            </ul>
+                            <div class="image">
+                                <a href="product-page.html"><img src="Resources/images/product-images/гармонь чайка синий.jpeg" alt="Изображение товара"></a>
+                            </div>
                         </div>
-                    </div>
-                    <a class="product-name" href="product-page.html">НаименованиеНаименованиеНаименованиеНаименование</a>
-                    <div class="product-quantity-changer-box">
-                        <span>Количество:</span>
-                        <div class="product-quantity-changer">
-                            <button class="minus">−</button>
-                            <input type="text" value="1">
-                            <button class="plus">+</button>
+                        <div class="product-name-and-options">
+                            <a class="product-name" href="product-page.html">НаименованиеНаименованиеНаименованиеНаименование</a>
+                            <div class="product-options">
+                                <dl>
+                                    <dt>Опция:</dt>
+                                    <dd>вариант</dd>
+                                </dl>
+                            </div>
                         </div>
+                        
                     </div>
-                    <div class="price-and-sum">
-                        <dl>
-                            <dt>Цена:</dt>
-                            <dd>10 000 руб.</dd>
-                            <dt>Сумма:</dt>
-                            <dd>10 000 руб.</dd>
-                        </dl>
+                    <div class="product-quantity-wrapper">
+                        <div class="product-quantity">
+                            <div class="product-quantity-changer-box">
+                                <span>Количество:</span>
+                                <div class="product-quantity-changer">
+                                    <button class="minus">−</button>
+                                    <input type="text" value="1">
+                                    <button class="plus">+</button>
+                                </div>
+                            </div>
+                            <div class="price-and-sum">
+                                <dl>
+                                    <dt>Цена:</dt>
+                                    <dd>10 000 руб.</dd>
+                                    <dt>Сумма:</dt>
+                                    <dd>10 000 руб.</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        
                     </div>
-                    <div class="cart-and-favorite">
-                        <button class="button">Удалить</button>
+                    <div class="cart-product-actions">
+                        <button class="reload"></button>
                         <button class="like"></button>
+                        <button class="delete"></button>
                     </div>
                 </div>
             </div>
@@ -241,10 +258,6 @@
             </div>
         </div>
     </footer>
-    <script src="js/slider.js" type="text/javascript"></script>
-    <script src="js/favorite.js" type="text/javascript"></script>
-    <script src="js/mobile-menu.js" type="text/javascript"></script>
-    <script src="js/error-warning.js" type="text/javascript"></script>
-    <script src="js/product-quantity-changer.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
 </body>
 </html>

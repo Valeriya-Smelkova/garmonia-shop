@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <title>Оформление заказа</title>
 </head>
+
 <body>
     <header>
         <div class="header-block-1">
@@ -108,12 +110,18 @@
                 </div>
                 <nav class="header-block-3-menu">
                     <ul>
-                        <li><button class="button" onclick="window.location.href='category-page.html'">Гармони</button></li>
-                        <li><button class="button" onclick="window.location.href='category-page.html'">Аккордеоны</button></li>
-                        <li><button class="button" onclick="window.location.href='category-page.html'">Баяны</button></li>
-                        <li><button class="button" onclick="window.location.href='category-page.html'">Аксессуары</button></li>
-                        <li><button class="button" onclick="window.location.href='category-page.html'">Обучающие материалы</button></li>
-                        <li><button class="button" onclick="window.location.href='category-page.html'">Услуги</button></li>
+                        <li><button class="button" onclick="window.location.href='category-page.html'">Гармони</button>
+                        </li>
+                        <li><button class="button"
+                                onclick="window.location.href='category-page.html'">Аккордеоны</button></li>
+                        <li><button class="button" onclick="window.location.href='category-page.html'">Баяны</button>
+                        </li>
+                        <li><button class="button"
+                                onclick="window.location.href='category-page.html'">Аксессуары</button></li>
+                        <li><button class="button" onclick="window.location.href='category-page.html'">Обучающие
+                                материалы</button></li>
+                        <li><button class="button" onclick="window.location.href='category-page.html'">Услуги</button>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -124,7 +132,8 @@
             <h1>Оформление заказа</h1>
             <form action="done-page.html">
                 <fieldset>
-                    <legend class="subtitle subtitle_mb10">1. <span class="required">* </span>Контактная информация</legend>
+                    <legend class="subtitle subtitle_mb10">1. <span class="required">* </span>Контактная информация
+                    </legend>
                     <label for="firstname">Имя:</label>
                     <input class="form-input form-input_w360" type="text" id="firstname" name="firstname" required>
                     <label for="lastname">Фамилия:</label>
@@ -146,9 +155,41 @@
                             <span></span>Доставка
                         </label>
                     </div>
-                    <label for="delivery-address">Адрес доставки:</label>
-                    <textarea class="form-input form-input_w360 textarea" type="textarea" id="delivery-address" name="delivery-address"></textarea>
-                    <p class="address-example">Например, г. Москва, ул.Большая Пушкарская, д.47, к.2, кв.56</p>
+                    <h3 class="subtitle subtitle_h3 subtitle_mb10">Адрес доставки:</h3>
+                    <label class="checkbox" for="existing">
+                        <input type="radio" id="existing" name="delivery-address" checked>
+                        <span></span>Использовать существующий
+                    </label>
+                    <label for="select-address">Мои адреса:</label>
+                    <select class="form-input form-input_w360" id="select-address" name="address">
+                        <option value="valaddress1">Адрес</option>
+                    </select>
+                    <label class="checkbox" for="new">
+                        <input type="radio" id="new" name="delivery-address" checked>
+                        <span></span>Создать новый
+                    </label>
+                    <label for="firstname"><span class="required">* </span>Имя:</label>
+                    <input class="form-input form-input_w360" type="text" id="firstname" name="firstname"
+                        required="required">
+                    <label for="lastname"><span class="required">* </span>Фамилия:</label>
+                    <input class="form-input form-input_w360" type="text" id="lastname" name="lastname"
+                        required="required">
+                    <label for="address"><span class="required">* </span>Адрес:</label>
+                    <textarea name="text" id="address" name="address" class="form-input form-input_w360 textarea"
+                        required="required"></textarea>
+                    <label for="city"><span class="required">* </span>Город:</label>
+                    <input class="form-input form-input_w360" type="text" id="city" name="city" required="required">
+                    <label for="postcode"><span class="required">* </span>Почтовый индекс:</label>
+                    <input class="form-input form-input_w360" type="text" id="postcode" name="postcode"
+                        required="required">
+                    <label for="select-country"><span class="required">* </span>Страна:</label>
+                    <select class="form-input form-input_w360" id="select-country" name="country">
+                        <option value="valcountry1">Страна</option>
+                    </select>
+                    <label for="select-region"><span class="required">* </span>Регион / Область:</label>
+                    <select class="form-input form-input_w360" id="select-region" name="region">
+                        <option value="valregion1">Регион</option>
+                    </select>
                 </fieldset>
                 <fieldset>
                     <legend class="subtitle subtitle_mb10">3. <span class="required">* </span>Оплата заказа</legend>
@@ -165,23 +206,36 @@
                 </fieldset>
                 <fieldset>
                     <legend class="subtitle subtitle_mb10">4. Товары в заказе</legend>
-                    <div class="four-columns-265-grid">
-                        <div class="product-card card">
-                            <div class="image-and-statuse">
-                                <ul>
-                                    <li>Скидка</li>
-                                    <li>Новинка</li>
-                                    <li>Хит</li>
-                                </ul>
-                                <div class="card-image">
-                                    <img src="Resources/images/product-images/гармонь чайка синий.jpeg" alt="Изображение товара">
+                    <div class="cart-products">
+                        <div class="cart-product">
+                            <div class="product-info">
+                                <div class="image-and-statuse">
+                                    <ul>
+                                        <li>Скидка</li>
+                                        <li>Новинка</li>
+                                        <li>Хит</li>
+                                    </ul>
+                                    <div class="image">
+                                        <a href="product-page.html"><img
+                                                src="Resources/images/product-images/гармонь чайка синий.jpeg"
+                                                alt="Изображение товара"></a>
+                                    </div>
+                                </div>
+                                <div class="product-name-and-options">
+                                    <a class="product-name"
+                                        href="product-page.html">НаименованиеНаименованиеНаименованиеНаименование</a>
+                                    <div class="product-options">
+                                        <dl>
+                                            <dt>Опция:</dt>
+                                            <dd>вариант</dd>
+                                        </dl>
+                                    </div>
                                 </div>
                             </div>
-                            <span class="product-name">НаименованиеНаименованиеНаименованиеНаименование</span>
                             <div class="price-and-sum">
                                 <dl>
                                     <dt>Количество:</dt>
-                                    <dd>1 шт.</dd>
+                                    <dd>1</dd>
                                     <dt>Цена:</dt>
                                     <dd>10 000 руб.</dd>
                                     <dt>Сумма:</dt>
@@ -207,13 +261,21 @@
                 <fieldset>
                     <legend class="subtitle subtitle_mb10">6. Комментарий к заказу</legend>
                     <label for="commentary">Ваш комментарий:</label>
-                    <textarea class="form-input form-input_w360 textarea" type="textarea" id="comment" name="comment"></textarea>
+                    <textarea class="form-input form-input_w360 textarea" type="textarea" id="comment"
+                        name="comment"></textarea>
                 </fieldset>
                 <fieldset>
                     <label class="checkbox" for="agreement">
                         <input type="checkbox" id="agreement" name="agreement">
-                        <span></span>Я прочитал документ <span class="link_underlined"><a href="info-page.html">"Политика конфиденциальности"</a></span> и согласен с условиями безопасности и обработки персональных данных</span>
+                        <span></span>Я прочитал документ <span class="link_underlined"><a
+                                href="info-page.html">"Политика конфиденциальности"</a></span> и согласен с условиями
+                        безопасности и обработки персональных данных</span>
                     </label>
+                </fieldset>
+                <fieldset>
+                    <label for="captcha"><span class="required">* </span>Введите код в поле ниже:</label>
+                    <input class="form-input form-input_w360" type="text" id="captcha" name="captcha"
+                        required="required">
                 </fieldset>
                 <div class="button-align-center">
                     <input class="submit-button" type="submit" value="Оформить заказ">
@@ -292,10 +354,7 @@
             </div>
         </div>
     </footer>
-    <script src="js/slider.js" type="text/javascript"></script>
-    <script src="js/favorite.js" type="text/javascript"></script>
-    <script src="js/mobile-menu.js" type="text/javascript"></script>
-    <script src="js/error-warning.js" type="text/javascript"></script>
-    <script src="js/product-quantity-changer.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
 </body>
+
 </html>
